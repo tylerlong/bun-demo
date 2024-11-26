@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "demo": "bun src/index.ts"
+  },
   "dependencies": {},
   "devDependencies": {
     "bun-types": "^1.1.36"

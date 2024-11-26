@@ -23,3 +23,9 @@ Create `tsconfig.json` with the following content:
 ```
 bun src/index.ts
 ```
+
+or you can run a package.json script:
+
+```
+bun demo
+```
