@@ -4,10 +4,7 @@ const server = Bun.serve({
   port: 3000,
   async fetch(request) {
     const url = new URL(request.url);
-    let path = url.pathname;
-    if (!path.endsWith("/")) {
-      path += "/";
-    }
+    const path = url.pathname.endsWith("/") ? url.pathname : url.pathname + "/";
     if (path === "/webhook/" && request.method === "POST") {
       try {
         const body = await request.json();
@@ -19,7 +16,9 @@ const server = Bun.serve({
         // not json, ignore
       }
       const validationToken = request.headers.get("Validation-Token");
-      const headers = {};
+      const headers = {
+        "Content-Type": "text/plain",
+      };
       if (validationToken) {
         headers["Validation-Token"] = validationToken;
       }
