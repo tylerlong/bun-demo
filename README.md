@@ -42,7 +42,9 @@ Go to `https://<name-of-your-deployment>.onrender.com/read/`.
 
 Please note that, only the latest 100 notifications are shown.
 
-## Limitation
+The notifiations are saved in memory, so if you restart your server or redeploy the service, the notifications may disappear. I said at the beginning, this project is for testing only.
+
+## Limitations
 
 > Your free instance will spin down with inactivity, which can delay requests by 50 seconds or more.
 
