@@ -1,7 +1,7 @@
 const notifications: any[] = [];
 
 const server = Bun.serve({
-  port: 3000,
+  port: parseInt(process.env.PORT || "3000"),
   async fetch(request) {
     const url = new URL(request.url);
     const path = url.pathname.endsWith("/") ? url.pathname : url.pathname + "/";
