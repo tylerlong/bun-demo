@@ -43,3 +43,5 @@ So before you test, you need to access `https://<name-of-your-deployment>.onrend
 Click the button below to deploy this application to Heroku:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/tylerlong/rc-webhook-receiver)
+
+Other instructions are similar to render.com instructions. Just replace "https://<name-of-your-deployment>.onrender.com" with your heroku app's URL.
