@@ -4,7 +4,7 @@ This is a server side application to receive RingCentral WebHook notifications.
 
 Please note that: it's for **testing** only, not for production, since there is no security built-in.
 
-## How to deploy this project for free
+# Deploy to render.com (free)
 
 Create a new account on [render.com](https://render.com/) if you haven't done so.
 
@@ -49,3 +49,9 @@ The notifiations are saved in memory, so if you restart your server or redeploy 
 > Your free instance will spin down with inactivity, which can delay requests by 50 seconds or more.
 
 So before you test, you need to access `https://<name-of-your-deployment>.onrender.com/read/` to activate your app.
+
+# Deploy to heroku.com (paid hosting)
+
+Click the button below to deploy this application to Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/tylerlong/rc-webhook-receiver)

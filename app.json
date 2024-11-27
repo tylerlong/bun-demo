@@ -1,0 +1,17 @@
+{
+  "name": "RingCentral WebHook Receiver",
+  "description": "A server-side application to receive RingCentral WebHook notifications for testing purposes.",
+  "repository": "https://github.com/tylerlong/rc-webhook-receiver",
+  "keywords": ["ringcentral", "webhook", "testing"],
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment setting",
+      "value": "production"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/oven-sh/heroku-buildpack-bun"
+    }
+  ]
+}
